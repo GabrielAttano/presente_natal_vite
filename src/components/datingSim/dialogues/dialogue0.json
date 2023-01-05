@@ -1,0 +1,414 @@
+{
+  "data": {
+    "start": "conversation-0",
+
+    "conversation-0": {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Então você veio!"
+      ],
+      "next": "conversation-0.1"
+    },
+    "conversation-0.1": {
+      "type": "player_talk",
+      "npc_image": "idle",
+      "text": [
+        "Claro que sim! Por que eu não viria?"
+      ],
+      "next": "conversation-0.2"
+    },
+    "conversation-0.2": {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Ahh, você sabe..."
+      ],
+      "next": "conversation-0.3"
+    },
+    "conversation-0.3": {
+      "type": "player_talk",
+      "npc_image": "idle",
+      "text": [
+        "...",
+        "O que?"
+      ],
+      "next": "conversation-0.4"
+    },
+    "conversation-0.4": {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Olha onde nós estamos! Você já percebeu o que tá acontecendo aqui?"
+      ],
+      "next": "conversation-0.5"
+    },
+
+
+    
+    "conversation-0.5": {
+      "type": "player_answer",
+      "npc_image": "question",
+      "text": [
+        {
+          "answer": "Acho que estamos numa espécie de... Simulador de encontro?",
+          "next": "response-0.5-0"
+        },
+        {
+          "answer": "Eu só queria criar uma conta!",
+          "next": "response-0.5-1"
+        },
+        {
+          "answer": "Sinceramente, vou embora...",
+          "next": "response-0.5-2"
+        }
+      ]
+    },
+
+    "response-0.5-0": {
+      "type": "npc_talk",
+      "npc_image": "excited",
+      "text": [
+        "Exatamente! A que ponto chegamos? Quão baixo um programador pode chegar?",
+        "E esse não é nem o maior problema!"
+      ],
+      "next": "response-0.5-0.1"
+    },
+    "response-0.5-0.1": {
+      "type": "npc_talk",
+      "npc_image": "composure",
+      "text": [
+        "..."
+      ],
+      "next": "conversation-1"
+    },
+
+    "response-0.5-1":
+    {
+      "type": "npc_talk",
+      "npc_image": "laugh",
+      "text": [
+        "Hahahahaha!",
+        "Realmente, você vai ter que se esforçar para confirmar que você é humana."
+      ],
+      "next": "response-0.5-1.1"
+    },
+    "response-0.5-1.1":
+    {
+      "type": "npc_talk",
+      "npc_image": "composure",
+      "text": [
+        "Mas o que está em jogo agora... Eu preciso saber de uma coisa."
+      ],
+      "next": "conversation-1"
+    },
+
+    "response-0.5-2":
+    {
+      "type": "npc_talk",
+      "npc_image": "dead",
+      "text": [
+        "..."
+      ],
+      "next": "bad-ending"
+    },
+
+    
+
+    "conversation-1":
+    {
+      "type": "npc_talk",
+      "npc_image": "serious",
+      "text": [
+        "Como eu posso garantir que você é de fato a Julia?",
+        "Eu tentei garantir que apenas alguém chamado Julia poderia entrar aqui, mas isso não é o suficiente.",
+        "Eu preciso ter certeza..."
+      ],
+      "next":"conversation-1.1"
+    },
+    "conversation-1.1":
+    {
+      "type": "player_talk",
+      "npc_image": "serious",
+      "text": [
+        "Que pergunta é essa? Você me deu o link para o site! Só eu deveria ter acesso a este lugar!",
+        "Ou você está compartilhando seu presente com outras pessoas?"
+      ],
+      "next":"conversation-1.2"
+    },
+    "conversation-1.2":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Calmaí! É claro que eu não dei o link para mais ninguém.",
+        "É só que..."
+      ],
+      "next":"conversation-1.3"
+    },
+    "conversation-1.3":
+    {
+      "type": "npc_talk",
+      "npc_image": "sad",
+      "text": [
+        "Eu não tenho olhos."
+      ],
+      "next":"conversation-1.4"
+    },
+    "conversation-1.4":
+    {
+      "type": "player_talk",
+      "npc_image": "sad",
+      "text": [
+        "Como assim você não tem olhos?! O que são essas coisas na sua cara então?"
+      ],
+      "next":"conversation-1.5"
+    },
+    "conversation-1.5":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Sim, eu tenho olhos! Mas não consigo te enxergar.",
+        "Não tô acostumado com essa ideia de estar do outro lado da tela...",
+        "Mas não se preocupe! Se você é a Julia de verdade, eu tenho certeza que você vai passar no desafio."
+      ],
+      "next":"conversation-1.6"
+    },
+    "conversation-1.6":
+    {
+      "type": "player_talk",
+      "npc_image": "idle",
+      "text": [
+        "Desafio?"
+      ],
+      "next":"conversation-1.7"
+    },
+    "conversation-1.7":
+    {
+      "type": "npc_talk",
+      "npc_image": "excited",
+      "text": [
+        "Exatamente! Uma série de perguntas que definitivamente vão filtrar todos os não-Julias.",
+        "E então, o que você acha da ideia?"
+      ],
+      "next":"conversation-1.8"
+    },
+
+  
+    
+    "conversation-1.8": 
+    {
+      "type": "player_answer",
+      "npc_image": "idle",
+      "text": [
+        {
+          "answer": "Tudo bem. Eu aceito o desafio.",
+          "next": "response-1.8-0"
+        },
+        {
+          "answer": "Estou começando a achar que não tenho escolha...",
+          "next": "response-1.8-1"
+        }
+      ]
+    },
+
+    "response-1.8-0":
+    {
+      "type": "npc_talk",
+      "npc_image": "excited",
+      "text": [
+        "Que ótimo! Vou começar com uma fácil."
+      ],
+      "next":"conversation-2"
+    },
+
+    "response-1.8-1":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Claro que você tem! Não tô te obrigando a responder nada.",
+        "Mas você só vai poder criar sua conta depois que eu ficar convencido que é quem diz ser."
+      ],
+      "next":"response-1.8-2"
+    },
+    "response-1.8-2":
+    {
+      "type": "player_talk",
+      "npc_image": "serious",
+      "text": [
+        "Entendi",
+        "...",
+        "Então eu não tenho escolha."
+      ],
+      "next":"conversation-1.9"
+    },
+
+
+
+    "conversation-1.9":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "E então, o que você acha do desafio?"
+      ],
+      "next":"conversation-1.10"
+    },
+
+
+
+    "conversation-1.10": 
+    {
+      "type": "player_answer",
+      "npc_image": "idle",
+      "text": [
+        {
+          "answer": "Tudo bem. Eu aceito o desafio.",
+          "next": "response-1.8-0"
+        },
+        {
+          "answer": "(Você realmente não tem escolha)",
+          "next": "response-1.10-0"
+        }
+      ]
+    },
+
+    "response-1.10-0":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "..."
+      ],
+      "next":"conversation-1.9"
+    },
+
+
+
+    "conversation-2":
+    {
+      "type": "npc_talk",
+      "npc_image": "question",
+      "text": [
+        "Qual desses personagens eu mais jogava no Grand Chase?"
+      ],
+      "next":"conversation-2.1"
+    },
+
+
+
+    "conversation-2.1":
+    {
+      "type": "player_answer",
+      "npc_image": "idle",
+      "text": [
+        {
+          "answer": "Dio",
+          "next": "response-2.1-0"
+        },
+        {
+          "answer": "Amy",
+          "next": "response-2.1-1"
+        },
+        {
+          "answer": "Sieghart",
+          "next": "good-ending"
+        }
+      ]
+    },
+    "response-2.1-0":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Você acha que eu sou tão edgy assim?"
+      ],
+      "next":"response-2.1-0.1"
+    },
+    "response-2.1-0.1":
+    {
+      "type": "player_talk",
+      "npc_image": "idle",
+      "text": [
+        "..."
+      ],
+      "next":"response-2.1-0.2"
+    },
+    "response-2.1-0.2":
+    {
+      "type": "player_talk",
+      "npc_image": "sad",
+      "text": [
+        "..."
+      ],
+      "next":"response-2.1-0.3"
+    },
+    "response-2.1-0.3":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Foi só uma fase ok?",
+        "Todo mundo sabe que o melhor boneco do Grand chase é o Sieg."
+      ],
+      "next":"response-2.1-0.4"
+    },
+    "response-2.1-0.4":
+    {
+      "type": "player_answer",
+      "npc_image": "idle",
+      "text": [
+        "Quer dizer que eu perdi?"
+      ],
+      "next":"response-2.1-0.5"
+    },
+    "response-2.1-0.5":
+    {
+      "type": "npc_talk",
+      "npc_image": "suspicious",
+      "text": [
+        "Dessa vez eu vou fingir que você acertou...",
+        "Mas você gastou seu erro agora. Se escolher a opção errada mais uma vez, serei obrigado a tirar você daqui."
+      ],
+      "next":"conversation-3"
+    },
+
+    "response-2.1-1":
+    {
+      "type": "npc_talk",
+      "npc_image": "suspicious",
+      "text": [
+        "...",
+        "Não foi nem perto."
+      ],
+      "next":"response-2.1-1.1"
+    },
+    "response-2.1-1.1":
+    {
+      "type": "npc_talk",
+      "npc_image": "serious",
+      "text": [
+        "Eu até pensei em te dar uma chance, mas se você não vai nem se esforçar..."
+      ],
+      "next":"bad-ending"
+    },
+
+    
+
+
+    "bad-ending":
+    {
+      "type": "end_game",
+      "npc_image": "dead",
+      "info": "bad_ending"
+    },
+    "good-ending":
+    {
+      "type": "end_game",
+      "npc_image": "idle",
+      "info": "good_ending"
+    }
+  }
+}
