@@ -42,6 +42,14 @@ export const link = styled.span`
     border-bottom: 1px solid ${C.white};
   }
 `
+
+export const logo = styled.span`
+  color: ${C.primary};
+  font-size: 45px;
+  text-decoration: inherit;
+  font-weight: 700;
+`
+
 export const linkSeparator = styled.span`
   color: ${C.white};
   font-size: 20px;
@@ -99,5 +107,5 @@ export const nav_ul = styled.ul`
 `;
 
 export const nav_li = styled.li`
-  margin: 0 1em; 
+  margin: 0 0; 
 `
