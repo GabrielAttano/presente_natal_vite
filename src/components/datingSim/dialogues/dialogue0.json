@@ -76,7 +76,7 @@
     },
     "response-0.5-0.1": {
       "type": "npc_talk",
-      "npc_image": "composure",
+      "npc_image": "excited",
       "text": [
         "..."
       ],
@@ -96,7 +96,7 @@
     "response-0.5-1.1":
     {
       "type": "npc_talk",
-      "npc_image": "composure",
+      "npc_image": "laugh",
       "text": [
         "Mas o que está em jogo agora... Eu preciso saber de uma coisa."
       ],
@@ -525,7 +525,8 @@
       "type": "player_talk",
       "npc_image": "excited",
       "text": [
-        "Pera! Não foi isso que quis dizer!"
+        "Calmaí!",
+        "Não foi isso que quis dizer!"
       ],
       "next":"conversation-3.13"
     },
@@ -646,7 +647,8 @@
       "type": "npc_talk",
       "npc_image": "idle",
       "text": [
-        "Tá bem... Mas agora você entende né? É uma linha tênue."
+        "Tá bem... Mas agora você entende né?",
+        "É uma linha tênue."
       ],
       "next":"conversation-4.1"
     },
@@ -656,16 +658,6 @@
       "npc_image": "idle",
       "text": [
         "Não sei se chamaria isso de tênue..."
-      ],
-      "next":"conversation-4.2"
-    },
-    "conversation-4.2":
-    {
-      "type": "npc_talk",
-      "npc_image": "laugh",
-      "text": [
-        "Hahahaha",
-        "Não adianta focar nos detalhes."
       ],
       "next":"conversation-4.3"
     },
@@ -717,6 +709,34 @@
         "Coloca mais uma na conta! Tô quase acreditando que você é quem diz ser!",
         "Vamos para a reta final."
       ],
+      "next":"response-4.4-1.1"
+    },
+    "response-4.4-1.1":
+    {
+      "type": "player_talk",
+      "npc_image": "idle",
+      "text": [
+        "...",
+        "Você sabe que responder isso não significa que é verdade, né?"
+      ],
+      "next":"response-4.4-1.2"
+    },
+    "response-4.4-1.2":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Erro: Comportamento inesperado na Conversa <4.4-1.1>. Possíveis reparos: Alt..."
+      ],
+      "next":"response-4.4-1.3"
+    },
+    "response-4.4-1.3":
+    {
+      "type": "player_talk",
+      "npc_image": "idle",
+      "text": [
+        "Só continua!"
+      ],
       "next":"conversation-5"
     },
     "response-4.4-2":
@@ -725,6 +745,7 @@
       "npc_image": "idle",
       "text": [
         "Eu não sou tão narcisista assim!",
+        "Mas a ideia não é tão ruim assim...",
         "Desculpa, mas você vai ter que tentar de novo..."
       ],
       "next":"bad-ending"
@@ -735,6 +756,7 @@
       "type": "npc_talk",
       "npc_image": "idle",
       "text": [
+        "...",
         "Onde eu te pedi em namoro?"
       ],
       "next":"conversation-5.1"
@@ -764,7 +786,7 @@
       "type": "npc_talk",
       "npc_image": "idle",
       "text": [
-        "Nãoo, nós estávamos altos mas não nesse sentido!",
+        "Estávamos altos, mas não nesse sentido!",
         "Desculpa, mas você vai ter que tentar de novo..."
       ],
       "next":"bad-ending"
@@ -772,9 +794,9 @@
     "response-5.1-1":
     {
       "type": "npc_talk",
-      "npc_image": "idle",
+      "npc_image": "laugh",
       "text": [
-        "Você sabe que eu não faria nada tão sem graça assim...",
+        "Sem chance!",
         "Desculpa, mas você vai ter que tentar de novo..."
       ],
       "next":"bad-ending"
@@ -784,8 +806,8 @@
       "type": "npc_talk",
       "npc_image": "laugh",
       "text": [
-        "É verdade! E você teve que aguentar minha falta de coragem na hora de ir nos brinquedos hahaha",
-        "Olha, eu acho que tá na hora de te fazer minha última pergunta. Guardei ela para esse momento."
+        "É verdade! E você teve que aguentar minha falta de coragem na hora de ir nos brinquedos..",
+        "Olha, eu acho que tá na hora de te fazer minha última pergunta. Guardei para esse momento."
       ],
       "next":"conversation-6"
     },
@@ -795,7 +817,8 @@
       "type": "player_talk",
       "npc_image": "idle",
       "text": [
-        "E então, o que me aguarda? Que tipo de pergunta você preparou?"
+        "E então, o que me aguarda?",
+        "Que tipo de pergunta você preparou?"
       ],
       "next":"conversation-6.1"
     },
@@ -821,7 +844,7 @@
     "conversation-6.3":
     {
       "type": "npc_talk",
-      "npc_image": "serious",
+      "npc_image": "idle",
       "text": [
         "Sim! O site inteiro, cada pergunta, cada linha de código, todas foram motivadas por um único desejo, uma única vontade",
         "Tudo para que eu pudesse fazer você confirmar uma coisa..."
@@ -831,7 +854,7 @@
     "conversation-6.4":
     {
       "type": "player_talk",
-      "npc_image": "serious",
+      "npc_image": "idle",
       "text": [
         "Confirmar? Não estou entendendo..."
       ],
@@ -840,10 +863,11 @@
     "conversation-6.5":
     {
       "type": "npc_talk",
-      "npc_image": "serious",
+      "npc_image": "idle",
       "text": [
-        "Não está entendendo? É muito simples!",
-        "Você não pode criar uma conta a não ser que passe por mim. E como você vai passar por mim?"
+        "É muito simples!",
+        "Você só pode criar sua conta depois que passar por mim...",
+        "E como você vai passar por mim?"
       ],
       "next":"conversation-6.6"
     },
@@ -859,19 +883,23 @@
     "conversation-6.7":
     {
       "type": "npc_talk",
-      "npc_image": "serious",
+      "npc_image": "idle",
       "text": [
-        "E quem julga o que é correto aqui? Eu! EU tenho todo o poder! EU posso fazer o que quiser!",
-        "Não existe um final mais adequado do que o que vem a seguir, uma conclusão perfeita! Nota 100!"
+        "Exato!",
+        "E quem julga o que é correto aqui? Eu!", 
+        "EU tenho todo o poder! EU posso fazer o que quiser!",
+        "Não existe um final mais adequado do que o que vem a seguir!",
+        "Uma conclusão perfeita! Nota 100!"
       ],
       "next":"conversation-6.8"
     },
     "conversation-6.8":
     {
       "type": "player_talk",
-      "npc_image": "serious",
+      "npc_image": "idle",
       "text": [
-        "Não estou gostando do rumo que você quer levar as coisas..."
+        "O arco de vilão!",
+        "Não aguento mais, pergunta logo!"
       ],
       "next":"conversation-6.9"
     },
@@ -880,7 +908,7 @@
       "type": "npc_talk",
       "npc_image": "idle",
       "text": [
-        "Fica tranquila, vou parar com o mistério. Eu só preciso que você responda a seguinte pergunta corretamente:"
+        "Tudo bem. Eu só preciso que você responda a seguinte pergunta corretamente:"
       ],
       "next":"conversation-6.10"
     },
@@ -911,7 +939,7 @@
           "next": "response-6.11-0"
         },
         {
-          "answer": "Ver mais opções",
+          "answer": "Mais opções",
           "next": "response-6.11-1"
         }
       ]
@@ -921,7 +949,7 @@
       "type": "npc_talk",
       "npc_image": "excited",
       "text": [
-        "Eu sabia! Eu sempre soube! Eu nunca vou deixar você esquecer esse momento!"
+        "Eu sabia!"
       ],
       "next":"response-6.11-0.1"
     },
@@ -937,11 +965,72 @@
     "response-6.11-0.2":
     {
       "type": "npc_talk",
-      "npc_image": "laugh",
+      "npc_image": "excited",
       "text": [
-        "Talvez! Mas você escolheu responder mesmo assim!",
-        "E aquela história de os fins justificarem o meio?",
-        "Eu preciso avisar isso para o Gabriel do mundo real! Pode criar sua conta!"
+        "Os fins justificam os meios!"
+      ],
+      "next":"response-6.11-0.3"
+    },
+    "response-6.11-0.3":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Agora eu só preciso descobrir como avisar o Gabriel de verdade..."
+      ],
+      "next":"response-6.11-0.4"
+    },
+    "response-6.11-0.4":
+    {
+      "type": "player_talk",
+      "npc_image": "idle",
+      "text": [
+        "Como assim?"
+      ],
+      "next":"response-6.11-0.5"
+    },
+    "response-6.11-0.5":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Eu poderia enviar um email? Talvez uma foto?",
+        "É claro! Como eu poderia esquecer! Com um simples request eu posso enviar uma mensag..."
+      ],
+      "next":"response-6.11-0.6"
+    },
+    "response-6.11-0.6":
+    {
+      "type": "player_talk",
+      "npc_image": "idle",
+      "text": [
+        "...",
+        "Você não sabe fazer isso?!",
+        "E se eu sair de fininho antes disso?"
+      ],
+      "next":"response-6.11-0.7"
+    },
+    "response-6.11-0.7":
+    {
+      "type": "npc_talk",
+      "npc_image": "dead",
+      "text": [
+        "NÃO! ESPERA, TUDO MENOS ISSO!",
+        "Tecnicamente, você já respondeu todas as perguntas corretamente, se você sair agora eu seria obrigado a confirmar que você não é um rôbo.",
+        "Mas seria desastroso! Se eu não enviar pro chefe que você admitiu que ele te ama mais, eu...",
+        "Eu...",
+        "Eu vou ser uma vergonha...",
+        "Eu fui criado com esse propósito! Cada linha de códig..."
+      ],
+      "next":"response-6.11-0.8"
+    },
+    "response-6.11-0.8":
+    {
+      "type": "player_talk",
+      "npc_image": "dead",
+      "text": [
+        "Ele não precisa saber disso!",
+        "Não vou sentir empatia por uma máquina. Eu só quero o meu presente!"
       ],
       "next":"good-ending"
     },
@@ -961,7 +1050,7 @@
       "type": "player_talk",
       "npc_image": "idle",
       "text": [
-        "Você vai mesmo me forçar a escolher que sim?"
+        "Você vai mesmo me forçar a dizer que sim?"
       ],
       "next":"response-6.11-1.2"
     },
@@ -988,7 +1077,6 @@
       "type": "npc_talk",
       "npc_image": "idle",
       "text": [
-        "Olha, quanto mais resistência, menos presentes...",
         "Eu não vou contar para ninguém. Só a gente vai ficar sabendo disso, e eu não passo de pixels na sua tela!"
       ],
       "next":"response-6.11-1.5"
@@ -1022,15 +1110,15 @@
       "text": [
         {
           "answer": "Sim! Concordo plenamente!",
-          "next": "response-7.1-0"
+          "next": "response-6.11-0"
         },
         {
           "answer": "Sim! Nunca tive tanta certeza de algo na minha vida.",
-          "next": "response-7.1-0"
+          "next": "response-6.11-0"
         },
         {
           "answer": "Sim, você é o melhor namorado do mundo!",
-          "next": "response-7.1-0"
+          "next": "response-6.11-0"
         },
         {
           "answer": "Não.",
@@ -1039,16 +1127,6 @@
       ]
     },
 
-    "response-7.1-0":
-    {
-      "type": "npc_talk",
-      "npc_image": "excited",
-      "text": [
-        "Obrigado! Eu sabia que podia confiar em você!",
-        "Agora não resta mais nada, eu acredito que você é a Julia, pode ir criar sua conta e resgatar seus presentes!"
-      ],
-      "next":"good-ending"
-    },
     "response-7.1-1":
     {
       "type": "npc_talk",
@@ -1065,21 +1143,46 @@
       "type": "player_talk",
       "npc_image": "dead",
       "text": [
-        "Você sabe que eu nunca concordaria com essa afirmação!",
-        "Na verdade, eu negar apenas prova que eu sou realmente a Julia!"
+        "Você sabe que eu nunca concordaria com isso!",
+        "Na verdade, eu negar apenas prova que eu sou realmente a Julia."
       ],
       "next":"response-7.1-1.2"
     },
     "response-7.1-1.2":
     {
       "type": "npc_talk",
-      "npc_image": "sad",
+      "npc_image": "idle",
       "text": [
-        "Ok, você tem um ponto...",
-        "Não vou insistir mais. Pode criar sua conta..."
+        "Você tem um ponto...",
+        "Mas as vezes temos que aceitar que não existe escolha.",
+        "Não é culpa sua, as coisas foram programadas assim. Eu preciso de uma resposta para prosseguir.",
+        "Uma resposta certa.",
+        "Eu já falei, apenas nós dois ficaremos sabendo disso..."
       ],
-      "next":"good-ending"
+      "next":"response-7.1-1.3"
     },
+    "response-7.1-1.3":
+    {
+      "type": "player_talk",
+      "npc_image": "idle",
+      "text": [
+        "Eu não aguento mais...",
+        "Tá bem, eu vou responder sua pergunta 'corretamente'.",
+        "Não significa que eu concordo, só tô respondendo para prosseguir. Dessa vez o fim vai justificar os meios."
+      ],
+      "next":"response-7.1-1.4"
+    },
+    "response-7.1-1.4":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Eu agradeço!",
+        "Então, vamos lá..."
+      ],
+      "next":"conversation-6.10"
+    },
+    
 
 
     "bad-ending":

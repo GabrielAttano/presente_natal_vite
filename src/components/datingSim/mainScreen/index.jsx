@@ -72,7 +72,7 @@ function MainScreen() {
     }
     if (info === 'good_ending') {
       console.log('good ending')
-      toast.success('Você conseguiu me convencer que não é um robô! Pode criar sua conta!')
+      toast.success('Você respondeu todas as perguntas! Pode criar sua conta!')
       dispatch(setIsRobot(false))
     }
     navigate('/create-account')
