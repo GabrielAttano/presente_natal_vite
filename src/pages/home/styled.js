@@ -12,10 +12,9 @@ export const body = styled.div`
   align-items: center;
   justify-content: flex-start;
   gap: 60px;
-
+  padding-bottom: 60px;
   @media (min-width: 992px) {
     gap: 100px;
-    height: 1800px;
   }
 `
 
