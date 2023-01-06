@@ -76,7 +76,6 @@ export const bodySection_containerSmall = styled.div`
 
   @media (min-width: 992px) {
     width: 33%;
-    /* height: 300px; */
   }  
 `
 
@@ -106,5 +105,4 @@ export const bodySection_title = styled.h1`
 
 export const bodySection_containerSmall_image = styled.img`
   width: 100%;
-  
 `

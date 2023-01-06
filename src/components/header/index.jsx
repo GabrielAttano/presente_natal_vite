@@ -33,7 +33,7 @@ function Header() {
                 <Link to={"/Login"} style={{ textDecoration: 'none' }}><S.nav_li>Login</S.nav_li></Link>
               }
               <Link to={"/"} style={{ textDecoration: 'none' }}><S.nav_li>Logo</S.nav_li></Link>
-              <Link to={"/presentes"} style={{ textDecoration: 'none' }}><S.nav_li>Presentes</S.nav_li></Link>
+              <Link to={"/gifts"} style={{ textDecoration: 'none' }}><S.nav_li>Presentes</S.nav_li></Link>
             </S.nav_ul>
 
           </S.nav>
