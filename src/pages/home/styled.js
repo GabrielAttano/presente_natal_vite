@@ -14,7 +14,7 @@ export const body = styled.div`
   gap: 60px;
   padding-bottom: 60px;
   @media (min-width: 992px) {
-    gap: 100px;
+    gap: 50px;
   }
 `
 
