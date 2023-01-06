@@ -244,7 +244,7 @@ function CreateAccount() {
 
               <S.form__input_big_container>
                 <S.form__input_big_container>
-                  <S.form__small_button type='button' onClick={handleIsRobotClick}>Confirme que você é humano</S.form__small_button>
+                  {isRobot && <S.form__small_button type='button' onClick={handleIsRobotClick}>Confirme que você é humano</S.form__small_button>}
               </S.form__input_big_container>
               </S.form__input_big_container>
 

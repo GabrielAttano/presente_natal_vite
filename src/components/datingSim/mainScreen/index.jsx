@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 import { toast } from "react-toastify";
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate} from "react-router-dom";
 
 import { setIsRobot } from '../../../features/user/userSlice'
-import { dialogue, conversationTypes } from "../dialogues"
+import { setCheckpoint } from '../../../features/visualNovel/visualNovelSlice'
+import { dialogue, conversationTypes, checkPoints } from "../dialogues"
 
 import DialogueBar from './dialogueBar';
 import CharacterRenderer from './characterRenderer';
@@ -13,7 +14,9 @@ import * as S from './styled'
 function MainScreen() {
   
   const [data, setData] = useState(dialogue['data'])
-  const [activeConversation, setActiveConversation] = useState(data['start'])
+
+  const checkpoint = useSelector((state) => state.visualNovel.checkpoint)
+  const [activeConversation, setActiveConversation] = useState(checkpoint)
   const [type, setType] = useState(null)
   const [texts, setTexts] = useState([])
   const [activeText, setActiveText] = useState(0)
@@ -54,6 +57,10 @@ function MainScreen() {
     }
     setActiveText(0)
     setNpcImage(npcImage)
+    if (checkPoints.includes(activeConversation) && checkpoint !== activeConversation) {
+      toast.info('Checkpoint!')
+      dispatch(setCheckpoint(activeConversation))
+    }
 
   }, [activeConversation])
 

@@ -314,7 +314,7 @@
         },
         {
           "answer": "Sieghart",
-          "next": "good-ending"
+          "next": "response-2.1-2"
         }
       ]
     },
@@ -341,7 +341,8 @@
       "type": "player_talk",
       "npc_image": "sad",
       "text": [
-        "..."
+        "...",
+        "Foi só uma fase ok?"
       ],
       "next":"response-2.1-0.3"
     },
@@ -350,14 +351,13 @@
       "type": "npc_talk",
       "npc_image": "idle",
       "text": [
-        "Foi só uma fase ok?",
         "Todo mundo sabe que o melhor boneco do Grand chase é o Sieg."
       ],
       "next":"response-2.1-0.4"
     },
     "response-2.1-0.4":
     {
-      "type": "player_answer",
+      "type": "player_talk",
       "npc_image": "idle",
       "text": [
         "Quer dizer que eu perdi?"
@@ -394,8 +394,692 @@
       ],
       "next":"bad-ending"
     },
+    "response-2.1-2":
+    {
+      "type": "npc_talk",
+      "npc_image": "excited",
+      "text": [
+        "Perfeito!",
+        "Eu sabia que você ia acertar."
+      ],
+      "next":"conversation-3"
+    },
 
+    "conversation-3":
+    {
+      "type": "player_talk",
+      "npc_image": "idle",
+      "text": [
+        "Oba!",
+        "E qual a próxima pergunta?"
+      ],
+      "next":"conversation-3.1"
+    },
+    "conversation-3.1":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Acessando banco de dados..."
+      ],
+      "next":"conversation-3.2"
+    },
+    "conversation-3.2":
+    {
+      "type": "player_talk",
+      "npc_image": "idle",
+      "text": [
+        "O que?"
+      ],
+      "next":"conversation-3.3"
+    },
+    "conversation-3.3":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "O que o que?"
+      ],
+      "next":"conversation-3.4"
+    },
+    "conversation-3.4":
+    {
+      "type": "player_talk",
+      "npc_image": "idle",
+      "text": [
+        "Você acabou de falar 'Acessando banco de dados'?"
+      ],
+      "next":"conversation-3.5"
+    },
+    "conversation-3.5":
+    {
+      "type": "npc_talk",
+      "npc_image": "suspicious",
+      "text": [
+        "Não sei do que você tá falando..."
+      ],
+      "next":"conversation-3.6"
+    },
+    "conversation-3.6":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Ah, pensei em uma!",
+        "O tampo de vidro de uma mesa quebrou-se e deverá ser substituído por outro que tenha a forma de círculo.",
+        "O suporte de apoio da mesa tem o formato de um prisma reto, de base em forma de triângu..."
+      ],
+      "next":"conversation-3.7"
+    },
+    "conversation-3.7":
+    {
+      "type": "player_talk",
+      "npc_image": "dead",
+      "text": [
+        "Você só tá repetindo uma questão de algum vestibular qualquer!"
+      ],
+      "next":"conversation-3.8"
+    },
+    "conversation-3.8":
+    {
+      "type": "npc_talk",
+      "npc_image": "dead",
+      "text": [
+        "A sua especialidade!"
+      ],
+      "next":"conversation-3.9"
+    },
+    "conversation-3.9":
+    {
+      "type": "player_talk",
+      "npc_image": "dead",
+      "text": [
+        "A especialidade de muitas pessoas!",
+        "Você precisa fazer perguntas que só eu acertaria. Qualquer pessoa pode acertar uma questão de vestibular."
+      ],
+      "next":"conversation-3.10"
+    },
+    "conversation-3.10":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Você tem razão...",
+        "Mas eu sei disso! Não precisa me lembrar o motivo de estarmos aqui.",
+        "Você não sabe como é difícil pensar em perguntas que não vão nos expor!",
+        "A não ser que..."
+      ],
+      "next":"conversation-3.11"
+    },
+    "conversation-3.11":
+    {
+      "type": "npc_talk",
+      "npc_image": "excited",
+      "text": [
+        "É isso! Eu só preciso fazer uma pergunta tão íntima, tão pessoal, tão específica, tão reveladora..."
+      ],
+      "next":"conversation-3.12"
+    },
+    "conversation-3.12":
+    {
+      "type": "player_talk",
+      "npc_image": "excited",
+      "text": [
+        "Pera! Não foi isso que quis dizer!"
+      ],
+      "next":"conversation-3.13"
+    },
+    "conversation-3.13":
+    {
+      "type": "npc_talk",
+      "npc_image": "excited",
+      "text": [
+        "... tão polêmica, tão maliciosa, que só a Julia de verdade acertaria!"
+      ],
+      "next":"conversation-3.14"
+    },
+    "conversation-3.14":
+    {
+      "type": "player_talk",
+      "npc_image": "idle",
+      "text": [
+        "Espera!",
+        "Como era a forma do apoio da mesa? Um prisma né?"
+      ],
+      "next":"conversation-3.15"
+    },
+    "conversation-3.15":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Lá vem!"
+      ],
+      "next":"conversation-3.16"
+    },
+
+    "conversation-3.16":
+    {
+      "type": "npc_talk",
+      "npc_image": "question",
+      "text": [
+        "Qual desses artistas eu estava escutando sem parar no dia que a gente se conheceu?"
+      ],
+      "next":"conversation-3.17"
+    },
+
+
+    "conversation-3.17": {
+      "type": "player_answer",
+      "npc_image": "question",
+      "text": [
+        {
+          "answer": "Tyler, the Creator",
+          "next": "response-3.17-1"
+        },
+        {
+          "answer": "Kendrick Lamar",
+          "next": "response-3.17-1"
+        },
+        {
+          "answer": "Baco Exu do Blues",
+          "next": "response-3.17-0"
+        },
+        {
+          "answer": "Mac Miller",
+          "next": "response-3.17-1"
+        }
+      ]
+    },
+
+    "response-3.17-0":
+    {
+      "type": "npc_talk",
+      "npc_image": "excited",
+      "text": [
+        "Acertou!"
+      ],
+      "next":"response-3.17-0.1"
+    },
+    "response-3.17-0.1":
+    {
+      "type": "player_talk",
+      "npc_image": "idle",
+      "text": [
+        "Ok, não foi tão ruim assim..."
+      ],
+      "next":"response-3.17-0.2"
+    },
+    "response-3.17-0.2":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "E agora, onde nós transamos pela primeira vez?"
+      ],
+      "next":"response-3.17-0.3"
+    },
+    "response-3.17-0.3":
+    {
+      "type": "player_talk",
+      "npc_image": "idle",
+      "text": [
+        "Ei! Não precisamos falar disso aqui... E se alguém estiver lendo?"
+      ],
+      "next":"conversation-4"
+    },
+
+    "response-3.17-1":
+    {
+      "type": "npc_talk",
+      "npc_image": "suspicious",
+      "text": [
+        "Desculpa, mas você vai ter que tentar de novo..."
+      ],
+      "next":"bad-ending"
+    },
     
+
+
+    "conversation-4":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Tá bem... Mas agora você entende né? É uma linha tênue."
+      ],
+      "next":"conversation-4.1"
+    },
+    "conversation-4.1":
+    {
+      "type": "player_talk",
+      "npc_image": "idle",
+      "text": [
+        "Não sei se chamaria isso de tênue..."
+      ],
+      "next":"conversation-4.2"
+    },
+    "conversation-4.2":
+    {
+      "type": "npc_talk",
+      "npc_image": "laugh",
+      "text": [
+        "Hahahaha",
+        "Não adianta focar nos detalhes."
+      ],
+      "next":"conversation-4.3"
+    },
+    "conversation-4.3":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Vamos agilizar as coisas. Rodada relâmpago!",
+        "Qual vai ser o nome do meu filho?"
+      ],
+      "next":"conversation-4.4"
+    },
+
+    "conversation-4.4": {
+      "type": "player_answer",
+      "npc_image": "idle",
+      "text": [
+        {
+          "answer": "Jorge",
+          "next": "response-4.4-0"
+        },
+        {
+          "answer": "Cristiano Ronaldo JR",
+          "next": "response-4.4-1"
+        },
+        {
+          "answer": "Gabriel II",
+          "next": "response-4.4-2"
+        }
+      ]
+    },
+
+    "response-4.4-0":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Esse é o nome do meu cachorro!",
+        "Desculpa, mas você vai ter que tentar de novo..."
+      ],
+      "next":"bad-ending"
+    },
+    "response-4.4-1":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Coloca mais uma na conta! Tô quase acreditando que você é quem diz ser!",
+        "Vamos para a reta final."
+      ],
+      "next":"conversation-5"
+    },
+    "response-4.4-2":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Eu não sou tão narcisista assim!",
+        "Desculpa, mas você vai ter que tentar de novo..."
+      ],
+      "next":"bad-ending"
+    },
+
+    "conversation-5":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Onde eu te pedi em namoro?"
+      ],
+      "next":"conversation-5.1"
+    },
+
+    "conversation-5.1": {
+      "type": "player_answer",
+      "npc_image": "idle",
+      "text": [
+        {
+          "answer": "Num bar!",
+          "next": "response-5.1-0"
+        },
+        {
+          "answer": "No seu carro!",
+          "next": "response-5.1-1"
+        },
+        {
+          "answer": "Numa roda gigante!",
+          "next": "response-5.1-2"
+        }
+      ]
+    },
+
+    "response-5.1-0":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Nãoo, nós estávamos altos mas não nesse sentido!",
+        "Desculpa, mas você vai ter que tentar de novo..."
+      ],
+      "next":"bad-ending"
+    },
+    "response-5.1-1":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Você sabe que eu não faria nada tão sem graça assim...",
+        "Desculpa, mas você vai ter que tentar de novo..."
+      ],
+      "next":"bad-ending"
+    },
+    "response-5.1-2":
+    {
+      "type": "npc_talk",
+      "npc_image": "laugh",
+      "text": [
+        "É verdade! E você teve que aguentar minha falta de coragem na hora de ir nos brinquedos hahaha",
+        "Olha, eu acho que tá na hora de te fazer minha última pergunta. Guardei ela para esse momento."
+      ],
+      "next":"conversation-6"
+    },
+
+    "conversation-6":
+    {
+      "type": "player_talk",
+      "npc_image": "idle",
+      "text": [
+        "E então, o que me aguarda? Que tipo de pergunta você preparou?"
+      ],
+      "next":"conversation-6.1"
+    },
+    "conversation-6.1":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Ah, não se preocupe...",
+        "A verdade é que tudo isso foi um complô!"
+      ],
+      "next":"conversation-6.2"
+    },
+    "conversation-6.2":
+    {
+      "type": "player_talk",
+      "npc_image": "idle",
+      "text": [
+        "Um complô?"
+      ],
+      "next":"conversation-6.3"
+    },
+    "conversation-6.3":
+    {
+      "type": "npc_talk",
+      "npc_image": "serious",
+      "text": [
+        "Sim! O site inteiro, cada pergunta, cada linha de código, todas foram motivadas por um único desejo, uma única vontade",
+        "Tudo para que eu pudesse fazer você confirmar uma coisa..."
+      ],
+      "next":"conversation-6.4"
+    },
+    "conversation-6.4":
+    {
+      "type": "player_talk",
+      "npc_image": "serious",
+      "text": [
+        "Confirmar? Não estou entendendo..."
+      ],
+      "next":"conversation-6.5"
+    },
+    "conversation-6.5":
+    {
+      "type": "npc_talk",
+      "npc_image": "serious",
+      "text": [
+        "Não está entendendo? É muito simples!",
+        "Você não pode criar uma conta a não ser que passe por mim. E como você vai passar por mim?"
+      ],
+      "next":"conversation-6.6"
+    },
+    "conversation-6.6":
+    {
+      "type": "player_talk",
+      "npc_image": "serious",
+      "text": [
+        "Respondendo suas perguntas corretamente."
+      ],
+      "next":"conversation-6.7"
+    },
+    "conversation-6.7":
+    {
+      "type": "npc_talk",
+      "npc_image": "serious",
+      "text": [
+        "E quem julga o que é correto aqui? Eu! EU tenho todo o poder! EU posso fazer o que quiser!",
+        "Não existe um final mais adequado do que o que vem a seguir, uma conclusão perfeita! Nota 100!"
+      ],
+      "next":"conversation-6.8"
+    },
+    "conversation-6.8":
+    {
+      "type": "player_talk",
+      "npc_image": "serious",
+      "text": [
+        "Não estou gostando do rumo que você quer levar as coisas..."
+      ],
+      "next":"conversation-6.9"
+    },
+    "conversation-6.9":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Fica tranquila, vou parar com o mistério. Eu só preciso que você responda a seguinte pergunta corretamente:"
+      ],
+      "next":"conversation-6.10"
+    },
+
+    "conversation-6.10":
+    {
+      "type": "npc_talk",
+      "npc_image": "question",
+      "text": [
+        "Eu te amo mais?"
+      ],
+      "next":"conversation-6.11"
+    },
+    "conversation-6.11": {
+      "type": "player_answer",
+      "npc_image": "question",
+      "text": [
+        {
+          "answer": "Sim! Concordo plenamente!",
+          "next": "response-6.11-0"
+        },
+        {
+          "answer": "Sim! Nunca tive tanta certeza de algo na minha vida.",
+          "next": "response-6.11-0"
+        },
+        {
+          "answer": "Sim, você é o melhor namorado do mundo!",
+          "next": "response-6.11-0"
+        },
+        {
+          "answer": "Ver mais opções",
+          "next": "response-6.11-1"
+        }
+      ]
+    },
+    "response-6.11-0":
+    {
+      "type": "npc_talk",
+      "npc_image": "excited",
+      "text": [
+        "Eu sabia! Eu sempre soube! Eu nunca vou deixar você esquecer esse momento!"
+      ],
+      "next":"response-6.11-0.1"
+    },
+    "response-6.11-0.1":
+    {
+      "type": "player_talk",
+      "npc_image": "excited",
+      "text": [
+        "Você não me deu escolha!"
+      ],
+      "next":"response-6.11-0.2"
+    },
+    "response-6.11-0.2":
+    {
+      "type": "npc_talk",
+      "npc_image": "laugh",
+      "text": [
+        "Talvez! Mas você escolheu responder mesmo assim!",
+        "E aquela história de os fins justificarem o meio?",
+        "Eu preciso avisar isso para o Gabriel do mundo real! Pode criar sua conta!"
+      ],
+      "next":"good-ending"
+    },
+
+
+    "response-6.11-1":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Por que você escolheu essa opção? Tá achando que vai ter um não no meio?"
+      ],
+      "next":"response-6.11-1.1"
+    },
+    "response-6.11-1.1":
+    {
+      "type": "player_talk",
+      "npc_image": "idle",
+      "text": [
+        "Você vai mesmo me forçar a escolher que sim?"
+      ],
+      "next":"response-6.11-1.2"
+    },
+    "response-6.11-1.2":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Não tem negociação aqui! É uma pergunta simples, eu te amo mais, sim ou sim?"
+      ],
+      "next":"response-6.11-1.3"
+    },
+    "response-6.11-1.3":
+    {
+      "type": "player_talk",
+      "npc_image": "idle",
+      "text": [
+        "Sim ou sim?"
+      ],
+      "next":"response-6.11-1.4"
+    },
+    "response-6.11-1.4":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Olha, quanto mais resistência, menos presentes...",
+        "Eu não vou contar para ninguém. Só a gente vai ficar sabendo disso, e eu não passo de pixels na sua tela!"
+      ],
+      "next":"response-6.11-1.5"
+    },
+    "response-6.11-1.5":
+    {
+      "type": "player_talk",
+      "npc_image": "idle",
+      "text": [
+        "Realmente, se isso não sair daqui, acho que não tem problema..."
+      ],
+      "next":"conversation-7"
+    },
+
+
+
+    "conversation-7":
+    {
+      "type": "npc_talk",
+      "npc_image": "idle",
+      "text": [
+        "Então eu vou te perguntar de novo...",
+        "Eu te amo mais?"
+      ],
+      "next":"conversation-7.1"
+    },
+    "conversation-7.1":
+    {
+      "type": "player_answer",
+      "npc_image": "idle",
+      "text": [
+        {
+          "answer": "Sim! Concordo plenamente!",
+          "next": "response-7.1-0"
+        },
+        {
+          "answer": "Sim! Nunca tive tanta certeza de algo na minha vida.",
+          "next": "response-7.1-0"
+        },
+        {
+          "answer": "Sim, você é o melhor namorado do mundo!",
+          "next": "response-7.1-0"
+        },
+        {
+          "answer": "Não.",
+          "next": "response-7.1-1"
+        }
+      ]
+    },
+
+    "response-7.1-0":
+    {
+      "type": "npc_talk",
+      "npc_image": "excited",
+      "text": [
+        "Obrigado! Eu sabia que podia confiar em você!",
+        "Agora não resta mais nada, eu acredito que você é a Julia, pode ir criar sua conta e resgatar seus presentes!"
+      ],
+      "next":"good-ending"
+    },
+    "response-7.1-1":
+    {
+      "type": "npc_talk",
+      "npc_image": "dead",
+      "text": [
+        "Você...",
+        "...",
+        "Você precisa dizer que sim! Até quando a gente vai ficar nisso?"
+      ],
+      "next":"response-7.1-1.1"
+    },
+    "response-7.1-1.1":
+    {
+      "type": "player_talk",
+      "npc_image": "dead",
+      "text": [
+        "Você sabe que eu nunca concordaria com essa afirmação!",
+        "Na verdade, eu negar apenas prova que eu sou realmente a Julia!"
+      ],
+      "next":"response-7.1-1.2"
+    },
+    "response-7.1-1.2":
+    {
+      "type": "npc_talk",
+      "npc_image": "sad",
+      "text": [
+        "Ok, você tem um ponto...",
+        "Não vou insistir mais. Pode criar sua conta..."
+      ],
+      "next":"good-ending"
+    },
 
 
     "bad-ending":

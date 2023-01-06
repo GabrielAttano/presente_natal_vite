@@ -8,3 +8,5 @@ export const conversationTypes = {
   PlayerAnswer: 'player_answer',
   EndGame: 'end_game'
 }
+
+export const checkPoints = ['conversation-1', 'conversation-2', 'conversation-3.1', 'conversation-4.3', 'conversation-5', 'conversation-6']
