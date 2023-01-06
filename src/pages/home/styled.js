@@ -10,11 +10,12 @@ export const body = styled.div`
   flex-direction: column;
   width: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 60px;
 
   @media (min-width: 992px) {
     gap: 100px;
+    height: 1800px;
   }
 `
 
@@ -28,6 +29,7 @@ export const backgroundImage = styled.div`
   justify-content: center;
 
   background-position-x: 50%;
+  background-position-y: 40%;
 `
 
 export const backgroundImage_text = styled.span`
