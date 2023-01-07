@@ -7,14 +7,12 @@ export const body = styled.div`
   flex-direction: column;
   width: 100%;
   align-items: center;
-  justify-content: center;
-  height: 500px;
-  gap: 60px;
+  justify-content: flex-start;
+  gap: 20px;
   
   @media (min-width: 992px) {
-    gap: 100px;
+    gap: 30px;
     padding-top: 64px;
-    height: 700px;
   }
 `
 
@@ -47,7 +45,7 @@ export const bodySection_containerSmall = styled.div`
 `
 
 export const bodySection_containerBig = styled.div`
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;

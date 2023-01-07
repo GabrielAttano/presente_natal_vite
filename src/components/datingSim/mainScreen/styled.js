@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import * as C from '../../../config/colors'
-import backgroundRestaurant from '../../../assets/images/scenarios/background-restaurant.jpg'
+import backgroundRestaurant from '../../../assets/images/scenarios/igor-rand-Cnfu7o_780g-unsplash.jpg'
 
 export const screenContainer = styled.div`
   display: flex;
@@ -12,13 +12,14 @@ export const screenContainer = styled.div`
   height: 650px;
   background-image: url(${backgroundRestaurant});
   background-size: cover;
+  /* background-position-x: 30%; */
 `
 
 export const dialogueContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30%;
+  height: 28%;
   width: 100%;
 `
 export const info = styled.div`
@@ -40,9 +41,15 @@ export const npcIdentifier = styled.div`
   font-weight: 500;
   color: ${C.bodyColor};
   background-color: ${C.white};
-  width: 40%;
+  padding-left: 4px;
+  padding-right: 4px;
   text-align: center;
   border-radius: 15px 15px 0 0;
+
+  @media (min-width: 992px) {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 `
 
 export const imageContainer = styled.div`

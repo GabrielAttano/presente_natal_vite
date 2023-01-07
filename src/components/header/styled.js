@@ -38,6 +38,7 @@ export const link = styled.span`
   color: ${C.white};
   font-size: 20px;
   text-decoration: inherit;
+  cursor: pointer;
   &:hover {
     border-bottom: 1px solid ${C.white};
   }

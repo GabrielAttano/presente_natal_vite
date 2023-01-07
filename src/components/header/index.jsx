@@ -4,17 +4,23 @@ import { Link } from 'react-router-dom';
 
 import * as S from './styled'
 import * as C from '../../config/colors'
+import { toast } from 'react-toastify';
 
 function Header() {
   const isLoggedIn = useSelector((state) => state.user.isLoggedIn)
+
+  const handleInvalidClick = (e) => {
+    e.preventDefault()
+    toast.info('Você nos pegou, ainda estamos desenvolvendo essa página...');
+  }
 
   return (
     <S.header>
       <S.linksBar>
         <S.linksContainer gap='8px'>
-          <Link to={"/faq"} style={{ textDecoration: 'none' }}><S.link>FAQ</S.link></Link>
+          <S.link onClick={handleInvalidClick}>FAQ</S.link>
           <S.linkSeparator>|</S.linkSeparator>
-          <Link to={"/suporte"} style={{ textDecoration: 'none' }}><S.link>Suporte</S.link></Link>
+          <S.link onClick={handleInvalidClick}>Suporte</S.link>
         </S.linksContainer>
         <S.linksContainer gap='28px'>
           <a href='https://github.com/GabrielAttano/'>

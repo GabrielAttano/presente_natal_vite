@@ -1144,7 +1144,7 @@
       "npc_image": "dead",
       "text": [
         "Você sabe que eu nunca concordaria com isso!",
-        "Na verdade, eu negar apenas prova que eu sou realmente a Julia."
+        "Na verdade, negar apenas prova que eu sou realmente a Julia."
       ],
       "next":"response-7.1-1.2"
     },
